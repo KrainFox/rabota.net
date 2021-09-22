@@ -1,0 +1,96 @@
+*,
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hellomessage{
+    margin: 10px 20px;
+    font-size: 16pt;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.logOutbtn{
+    width: 100px;
+    height: 40px;
+    background: gold;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 10px 20px;
+    box-shadow: 0 0 3px black;
+}
+
+.dltbtn {
+    font-size: 14pt;
+    margin: 3px 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 13px;
+    background-color: rgb(255, 186, 11);
+}
+
+.login_form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 300px;
+    max-width: 500px;
+    min-width: 250px;
+    margin: 10px 20px;
+    background:rgb(255, 186, 11);
+    box-shadow: 0 0 8px black;
+}
+
+.login_form .loginType {
+    margin: 10px;
+    font-size: 14pt;
+    font-weight: bold;
+    width: 90%;
+    background: transparent;
+}
+
+.login_form label {
+    margin: 10px;
+}
+
+.login_form input {
+    margin: 10px;
+    width: 90%;
+}
+
+select {
+    border:1px solid black;
+}
+
+input {
+    border: 1px solid black;
+}
+
+.subbutton{
+    width: 90%;
+}
+
+
+
+

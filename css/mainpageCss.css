@@ -1,0 +1,22 @@
+.col-3{
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    height: 250px;
+    background: gold;
+    box-shadow: 0 0 5px black;
+}
+
+.col-3 h3{
+    border: 2px solid black;
+    background: rgb(255, 186, 11);
+    border-radius: 15px;
+}
+
+.col-3 .link{
+    display: block;
+    position: relative;
+    margin-top: 10px;
+}

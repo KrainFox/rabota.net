@@ -1,0 +1,82 @@
+*,
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.accordion {
+    max-width: 90%;
+}
+
+.newsdate {
+    position: absolute;
+    right: 10px;
+    bottom: 2px;
+    transform: translateY(-50%);
+}
+
+.accordion .contentBx{
+    border: 2px solid black;
+    border-radius: 15px;
+    position: relative;
+    margin: 10px 20px;
+    box-shadow: 0 0 8px black;
+}
+
+.accordion .smallcontent {
+    border: 1px solid black;
+    border-radius: 0px 0px 13px 13px;
+    padding: 10px;
+    background: gold;
+}
+
+.accordion .contentBx .label{
+    border: 1px solid black;
+    border-radius: 13px 13px 0px 0px;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    background-color:rgb(255, 186, 11);
+}
+
+.accordion .contentBx .label::before{
+    content: 'Читать далее';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.accordion .contentBx .accordeon-content{
+    position: relative;
+    background: gold;
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.accordion .contentBx.active .accordeon-content{
+    border: 1px solid black;
+    border-radius: 0px 0px 13px 13px;
+    height: 80%;
+    padding: 10px;  
+}
+
+.accordion .contentBx.active .smallcontent{
+    height: 0;
+    padding: 0px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.accordion .contentBx.active .label::before{
+    content: 'Свернуть';
+}
